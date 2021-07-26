@@ -1,0 +1,114 @@
+html, .tamañocien {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: 
+        linear-gradient(
+            180deg,  
+            hsl(273, 75%, 66%), 
+            hsl(240, 73%, 65%));
+    
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+.imagen-cont {
+    background-color: white;
+    display: inline-block;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.texto-cont {
+    background-color: white;
+    display: inline-block;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+}
+
+.tarjeta-wrapper {
+    
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 30% 55%;
+}
+
+.img-gris {
+    content: url(./images/bg-pattern-desktop.svg);
+    height: 300px;
+    width: 300px;
+    transform: translateX(-100px);
+    position: absolute;
+    margin: 5px;
+}
+
+.img-mujer {
+    content: url(./images/illustration-woman-online-desktop.svg);
+    height: 225px;
+    width: 250px;
+    transform: translateX(-50px);
+    position: absolute;
+    margin: 5px;
+    z-index: 1;
+}
+
+.img-caja {
+    content: url(./images/illustration-box-desktop.svg );
+    height: 110px;
+    width: 110px;
+    transform: translate(-70px, 75px);
+    position: absolute;
+    margin: 5px;
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    
+    .imagen-cont {
+        background-color: white;
+        border-radius: 15px 15px 0px 0px;
+
+    }
+
+    .texto-cont {
+       background-color:white;
+       border-radius: 0px 0px 15px 15px;
+    }
+
+    .tarjeta-wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows:15% 40% ;
+    }
+
+    .img-gris {
+        content: url(./images/bg-pattern-mobile.svg);
+        height: 150px;
+        width: 335px;
+        transform: translate(55px, -15px);
+        position: absolute;
+    }
+    
+    .img-mujer {
+        content: url(./images/illustration-woman-online-mobile.svg);
+        height: 300px;
+        width: 375px;
+        transform: translate(25px, -175px);
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .img-caja {
+        content: url(./images/illustration-box-desktop.svg );
+        height: 0px;
+        width: 0px;
+    }
+}
